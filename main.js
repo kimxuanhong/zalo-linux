@@ -170,6 +170,14 @@ if (!gotTheLock) {
           }
         }
       },
+      {
+        label: 'Refresh',
+        click: () => {
+          if (win && !win.isDestroyed()) {
+            win.webContents.reload()
+          }
+        }
+      },
       { type: 'separator' },
       {
         label: 'Exit',
