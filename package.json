@@ -10,6 +10,7 @@
     "email": "xuanhongkim@gmail.com"
   },
   "scripts": {
+    "postinstall": "bash check-dependencies.sh",
     "start": "electron .",
     "dist": "electron-builder"
   },
@@ -49,7 +50,8 @@
         "libnss3",
         "libxss1",
         "libxtst6",
-        "xdg-utils"
+        "xdg-utils",
+        "imagemagick"
       ]
     }
   }
